@@ -1,1 +1,1 @@
-export { VerboseComponent } from "./deployment-settings";
+export { VerboseComponent } from "./verbose";
