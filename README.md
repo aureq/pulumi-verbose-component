@@ -17,5 +17,5 @@ git add package.json
 git commit -m "⏩ upgrade package version"
 
 git tag v1.0.5
-pulumi package publish github.com/aureq/pulumi-verbose-component@v1.0.5
 git push --tag
+pulumi package publish github.com/aureq/pulumi-verbose-component@v1.0.5
