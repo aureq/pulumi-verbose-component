@@ -1,7 +1,8 @@
 {
   "name": "verbose-component",
-  "version": "1.0.3",
-  "description": "A (verbose) Pulumi Component Resource that does nothing but be verbose.",
+  "publisher": "aureq",
+  "version": "1.0.4",
+  "description": "A Pulumi Component Resource that's verbose depending on your stack name.",
   "license": "ISC",
   "dependencies": {
     "@pulumi/pulumi": "^3.230.0"
