@@ -5,6 +5,7 @@
   "description": "A Pulumi Component Resource that's verbose depending on your stack name.",
   "license": "ISC",
   "dependencies": {
-    "@pulumi/pulumi": "^3.232.0"
+    "@pulumi/pulumi": "^3.232.0",
+    "typescript": "^5"
   }
 }
