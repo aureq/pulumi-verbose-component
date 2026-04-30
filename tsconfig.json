@@ -2,9 +2,9 @@
   "compilerOptions": {
       "strict": true,
       "outDir": "bin",
-      "target": "es2020",
-      "module": "node16",
-      "moduleResolution": "node16",
+      "target": "ES2022",
+      "module": "nodenext",
+      "moduleResolution": "nodenext",
       "sourceMap": true,
       "experimentalDecorators": true,
       "pretty": true,
