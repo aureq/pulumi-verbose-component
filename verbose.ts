@@ -38,7 +38,7 @@ export class VerboseComponent extends pulumi.ComponentResource {
                 pulumi.log.info(`🔥 This is a '${currentOrg}/${currentProject}/prod', let's be extra careful please 🙏.`);
                 break;
             default:
-                pulumi.log.warn(`⚠️  Unknown stack "${pulumi.getStack()}", no specific settings applied.`);
+                pulumi.log.warn(`⚠️  Unknown stack "${pulumi.getStack()}", no specific settings applied. You're currently working in '${currentOrg}/${currentProject}/${pulumi.getStack()}'..`);
         }
     }
 }
