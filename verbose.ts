@@ -24,15 +24,18 @@ export class VerboseComponent extends pulumi.ComponentResource {
         this.name = name;
         this.args = args;
 
+        const currentOrg: string = pulumi.getOrganization();
+        const currentProject: string = pulumi.getProject();
+
         switch ( pulumi.getStack() ) {
             case "dev":
-                pulumi.log.info("🔥 This is a 'dev', thank you for making our product better 🌿.");
+                pulumi.log.info(`🔥 This is a '${currentOrg}/${currentProject}/dev', thank you for making our product better 🌿.`);
                 break;
             case "staging":
-                pulumi.log.info("🔥 A `staging` stack, almost ready to ship 🎉.");
+                pulumi.log.info(`🔥 A '${currentOrg}/${currentProject}/staging' stack, almost ready to ship 🎉.`);
                 break;
             case "prod":
-                pulumi.log.info("🔥 This is a `prod`, let's be extra careful please 🙏.");
+                pulumi.log.info(`🔥 This is a '${currentOrg}/${currentProject}/prod', let's be extra careful please 🙏.`);
                 break;
             default:
                 pulumi.log.warn(`⚠️  Unknown stack "${pulumi.getStack()}", no specific settings applied.`);
