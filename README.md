@@ -8,7 +8,7 @@ The component itself does nothing other than being verbose depending on the stac
 
 ## Publishing the component
 
-```
+```bash
 echo "do some work..."
 git commit -m "🎉 commit message"
 
@@ -19,3 +19,4 @@ git commit -m "⏩ upgrade package version"
 git tag v1.0.5
 git push --tag
 pulumi package publish github.com/aureq/pulumi-verbose-component@v1.0.5
+```
