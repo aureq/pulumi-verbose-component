@@ -1,13 +1,7 @@
 {
   "name": "verbose-component",
   "publisher": "aureq",
-<<<<<<< HEAD
   "version": "1.1.0",
-||||||| 0ec6e51
-  "version": "1.0.4",
-=======
-  "version": "1.0.6",
->>>>>>> origin
   "description": "A Pulumi Component Resource that's verbose depending on your stack name.",
   "license": "ISC",
   "dependencies": {
